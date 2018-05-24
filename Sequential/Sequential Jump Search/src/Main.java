@@ -2,6 +2,7 @@
 /**
  *
  * @author Faiz Ikhwan
+ * Sequential
  */
 
 public class Main 
@@ -14,18 +15,19 @@ public class Main
         // To calculate runtime
         long startTime = System.currentTimeMillis();
         
-        whatToSearch = 20880340;    // 20,880,340                 
+        whatToSearch = 50880340;    // 20,880,340                 
         
         insertValueInArraySequential();                
         int res = jumpSearchSequential(arr, whatToSearch);        
         
         // Print out the result
-        System.out.println("\nNumber " + whatToSearch + " is at index " + res);      
+        System.out.println("\nSize of data: "+arr.length);
+        System.out.println("Number " + whatToSearch + " is at index " + res);      
                 
         // To calculate runtime
         long stopTime = System.currentTimeMillis();
         long elapsedTime = stopTime - startTime;
-        System.out.println("Runtime(Sec):0.0"+elapsedTime);                        
+        System.out.println("Runtime(millisecond):"+elapsedTime);
     }                                
     
     // Assign sorted value in the array (uncomment if want to user sequential)
